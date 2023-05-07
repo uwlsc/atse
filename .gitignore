@@ -5,6 +5,12 @@
 *.so
 *.dylib
 
+log/access.log
+.git
+log
+.idea/
+.DS_Store
+
 # Test binary, built with `go test -c`
 *.test
 

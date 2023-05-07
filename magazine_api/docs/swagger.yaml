@@ -1,0 +1,6996 @@
+basePath: /api/v1
+definitions:
+  inventory.DesignerItem:
+    properties:
+      created_by:
+        type: string
+      created_on:
+        type: string
+      creator_name:
+        type: string
+      deleted_by:
+        type: string
+      deleted_on:
+        type: string
+      deletor_name:
+        type: string
+      designer_id:
+        type: string
+      id:
+        type: string
+      item_code:
+        type: integer
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      rack:
+        items:
+          type: string
+        type: array
+      remarks:
+        type: string
+      unit:
+        type: string
+      updated_by:
+        type: string
+      updated_on:
+        type: string
+      updator_name:
+        type: string
+    type: object
+  inventory.DesignerItemBase:
+    properties:
+      designer_id:
+        type: string
+      item_code:
+        type: integer
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      rack:
+        items:
+          type: string
+        type: array
+      remarks:
+        type: string
+      unit:
+        type: string
+    type: object
+  inventory.ItemProduction:
+    properties:
+      batch_id:
+        type: string
+      created_by:
+        type: string
+      created_on:
+        type: string
+      creator_name:
+        type: string
+      deleted_by:
+        type: string
+      deleted_on:
+        type: string
+      deletor_name:
+        type: string
+      id:
+        type: string
+      item_code:
+        type: integer
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      rack:
+        items:
+          type: string
+        type: array
+      remarks:
+        type: string
+      status:
+        type: integer
+      unit:
+        type: string
+      updated_by:
+        type: string
+      updated_on:
+        type: string
+      updator_name:
+        type: string
+    type: object
+  inventory.ItemProductionBase:
+    properties:
+      batch_id:
+        type: string
+      item_code:
+        type: integer
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      rack:
+        items:
+          type: string
+        type: array
+      remarks:
+        type: string
+      status:
+        type: integer
+      unit:
+        type: string
+    type: object
+  inventory.ProductionReceive:
+    properties:
+      batch_id:
+        type: string
+      created_by:
+        type: string
+      created_on:
+        type: string
+      creator_name:
+        type: string
+      deleted_by:
+        type: string
+      deleted_on:
+        type: string
+      deletor_name:
+        type: string
+      id:
+        type: string
+      item_code:
+        type: integer
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      rack:
+        items:
+          type: string
+        type: array
+      remarks:
+        type: string
+      updated_by:
+        type: string
+      updated_on:
+        type: string
+      updator_name:
+        type: string
+    type: object
+  inventory.ProductionReceiveBase:
+    properties:
+      batch_id:
+        type: string
+      item_code:
+        type: integer
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      rack:
+        items:
+          type: string
+        type: array
+      remarks:
+        type: string
+    type: object
+  inventory.PurchaseItem:
+    properties:
+      created_by:
+        type: string
+      created_on:
+        type: string
+      creator_name:
+        type: string
+      deleted_by:
+        type: string
+      deleted_on:
+        type: string
+      deletor_name:
+        type: string
+      id:
+        type: string
+      item_code:
+        type: integer
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      rack:
+        items:
+          type: string
+        type: array
+      remarks:
+        type: string
+      supplier_id:
+        type: string
+      unit:
+        type: string
+      updated_by:
+        type: string
+      updated_on:
+        type: string
+      updator_name:
+        type: string
+    type: object
+  inventory.PurchaseItemBase:
+    properties:
+      item_code:
+        type: integer
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      rack:
+        items:
+          type: string
+        type: array
+      remarks:
+        type: string
+      supplier_id:
+        type: string
+      unit:
+        type: string
+    type: object
+  inventory.PurchaseReturnStock:
+    properties:
+      created_on:
+        type: string
+      deleted_on:
+        type: string
+      id:
+        type: string
+      item_code:
+        type: integer
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      rack:
+        items:
+          type: string
+        type: array
+      remarks:
+        type: string
+      supplier_id:
+        type: string
+      unit:
+        type: string
+      updated_on:
+        type: string
+    type: object
+  inventory.PurchaseReturnStockBase:
+    properties:
+      item_code:
+        type: integer
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      rack:
+        items:
+          type: string
+        type: array
+      remarks:
+        type: string
+      supplier_id:
+        type: string
+      unit:
+        type: string
+    type: object
+  inventory.SalesItem:
+    properties:
+      created_by:
+        type: string
+      created_on:
+        type: string
+      creator_name:
+        type: string
+      deleted_by:
+        type: string
+      deleted_on:
+        type: string
+      deletor_name:
+        type: string
+      id:
+        type: string
+      item_code:
+        type: integer
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      rack:
+        items:
+          type: string
+        type: array
+      remarks:
+        type: string
+      store_id:
+        type: string
+      updated_by:
+        type: string
+      updated_on:
+        type: string
+      updator_name:
+        type: string
+    type: object
+  inventory.SalesItemBase:
+    properties:
+      item_code:
+        type: integer
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      rack:
+        items:
+          type: string
+        type: array
+      remarks:
+        type: string
+      store_id:
+        type: string
+    type: object
+  inventory.SalesReturnStock:
+    properties:
+      created_on:
+        type: string
+      deleted_on:
+        type: string
+      id:
+        type: string
+      item_code:
+        type: integer
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      rack:
+        items:
+          type: string
+        type: array
+      remarks:
+        type: string
+      store_id:
+        type: string
+      updated_on:
+        type: string
+    type: object
+  inventory.SalesReturnStockBase:
+    properties:
+      item_code:
+        type: integer
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      rack:
+        items:
+          type: string
+        type: array
+      remarks:
+        type: string
+      store_id:
+        type: string
+    type: object
+  models.AccountBase:
+    properties:
+      account_number:
+        type: string
+      bank_branch:
+        type: string
+      bank_name:
+        type: string
+      creator_id:
+        type: string
+      name:
+        type: string
+    type: object
+  models.Address:
+    properties:
+      contact_number:
+        items:
+          type: string
+        type: array
+      country:
+        type: string
+      created_on:
+        type: string
+      creator_id:
+        type: string
+      deleted_on:
+        type: string
+      district:
+        type: string
+      id:
+        type: string
+      municipality:
+        type: string
+      state:
+        type: string
+      street:
+        type: string
+      updated_on:
+        type: string
+      ward:
+        type: integer
+    type: object
+  models.AddressBase:
+    properties:
+      contact_number:
+        items:
+          type: string
+        type: array
+      country:
+        type: string
+      creator_id:
+        type: string
+      district:
+        type: string
+      municipality:
+        type: string
+      state:
+        type: string
+      street:
+        type: string
+      ward:
+        type: integer
+    type: object
+  models.BankAccount:
+    properties:
+      account_number:
+        type: string
+      bank_branch:
+        type: string
+      bank_name:
+        type: string
+      created_on:
+        type: string
+      creator_id:
+        type: string
+      deleted_on:
+        type: string
+      id:
+        type: string
+      name:
+        type: string
+      updated_on:
+        type: string
+    type: object
+  models.Contact:
+    properties:
+      contact_number:
+        type: string
+      created_on:
+        type: string
+      creator_id:
+        type: string
+      deleted_on:
+        type: string
+      id:
+        type: string
+      name:
+        type: string
+      relation:
+        type: string
+      updated_on:
+        type: string
+    type: object
+  models.ContactBase:
+    properties:
+      contact_number:
+        type: string
+      creator_id:
+        type: string
+      name:
+        type: string
+      relation:
+        type: string
+    type: object
+  models.Document:
+    properties:
+      company_id:
+        type: string
+      created_on:
+        type: string
+      creator_id:
+        type: string
+      deleted_on:
+        type: string
+      document_type:
+        type: string
+      id:
+        type: string
+      updated_on:
+        type: string
+      url:
+        type: string
+    type: object
+  models.DocumentBase:
+    properties:
+      company_id:
+        type: string
+      creator_id:
+        type: string
+      document_type:
+        type: string
+      url:
+        type: string
+    type: object
+  models.Item:
+    properties:
+      created_on:
+        type: string
+      deleted_on:
+        type: string
+      description:
+        type: string
+      id:
+        type: string
+      item_code:
+        type: integer
+      item_name:
+        type: string
+      item_type:
+        type: integer
+      reference:
+        type: string
+      updated_on:
+        type: string
+    type: object
+  models.ItemBase:
+    properties:
+      description:
+        type: string
+      item_code:
+        type: integer
+      item_name:
+        type: string
+      item_type:
+        type: integer
+      reference:
+        type: string
+    type: object
+  models.PaymentType:
+    properties:
+      created_by:
+        type: string
+      created_on:
+        type: string
+      creator_name:
+        type: string
+      deleted_by:
+        type: string
+      deleted_on:
+        type: string
+      deletor_name:
+        type: string
+      id:
+        type: string
+      payment_name:
+        type: string
+      updated_by:
+        type: string
+      updated_on:
+        type: string
+      updator_name:
+        type: string
+    type: object
+  models.PaymentTypeBase:
+    properties:
+      payment_name:
+        type: string
+    type: object
+  models.Preset:
+    properties:
+      created_by:
+        type: string
+      created_on:
+        type: string
+      creator_name:
+        type: string
+      deleted_by:
+        type: string
+      deleted_on:
+        type: string
+      deletor_name:
+        type: string
+      id:
+        type: string
+      item_code:
+        type: string
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      raw_material_id:
+        type: string
+      remarks:
+        type: string
+      unit:
+        type: string
+      updated_by:
+        type: string
+      updated_on:
+        type: string
+      updator_name:
+        type: string
+    type: object
+  models.PresetBase:
+    properties:
+      item_code:
+        type: string
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      raw_material_id:
+        type: string
+      remarks:
+        type: string
+      unit:
+        type: string
+    type: object
+  models.Salary:
+    properties:
+      amount:
+        type: number
+      company_id:
+        type: string
+      created_by:
+        type: string
+      created_on:
+        type: string
+      creator_name:
+        type: string
+      deleted_by:
+        type: string
+      deleted_on:
+        type: string
+      deletor_name:
+        type: string
+      effective_from:
+        type: integer
+      effective_to:
+        type: integer
+      employee_id:
+        type: string
+      id:
+        type: string
+      salary_format:
+        type: integer
+      tailor_rate:
+        items:
+          $ref: '#/definitions/models.TailorRate'
+        type: array
+      updated_by:
+        type: string
+      updated_on:
+        type: string
+      updator_name:
+        type: string
+    type: object
+  models.SalaryBase:
+    properties:
+      amount:
+        type: number
+      company_id:
+        type: string
+      effective_from:
+        type: integer
+      effective_to:
+        type: integer
+      employee_id:
+        type: string
+      salary_format:
+        type: integer
+      tailor_rate:
+        items:
+          $ref: '#/definitions/models.TailorRate'
+        type: array
+    type: object
+  models.SupplierBase:
+    properties:
+      contact_number:
+        items:
+          type: string
+        type: array
+      description:
+        type: string
+      email:
+        type: string
+      established_date:
+        type: string
+      name:
+        type: string
+      pan_number:
+        type: string
+      vat_number:
+        type: string
+    type: object
+  models.Suppliers:
+    properties:
+      contact_number:
+        items:
+          type: string
+        type: array
+      created_by:
+        type: string
+      created_on:
+        type: string
+      creator_name:
+        type: string
+      deleted_by:
+        type: string
+      deleted_on:
+        type: string
+      deletor_name:
+        type: string
+      description:
+        type: string
+      email:
+        type: string
+      established_date:
+        type: string
+      id:
+        type: string
+      name:
+        type: string
+      pan_number:
+        type: string
+      updated_by:
+        type: string
+      updated_on:
+        type: string
+      updator_name:
+        type: string
+      vat_number:
+        type: string
+    type: object
+  models.TailorRate:
+    properties:
+      product_id:
+        type: string
+      rate:
+        type: number
+    type: object
+  models.Transaction:
+    properties:
+      bank_payment_from:
+        type: string
+      bank_payment_to:
+        type: string
+      bank_payment_transaction_id:
+        type: string
+      created_by:
+        type: string
+      created_on:
+        type: string
+      creator_name:
+        type: string
+      credit_amount:
+        type: number
+      debit_amount:
+        type: number
+      deleted_by:
+        type: string
+      deleted_on:
+        type: string
+      deletor_name:
+        type: string
+      id:
+        type: string
+      online_payment_from:
+        type: string
+      online_payment_name:
+        type: string
+      online_payment_to:
+        type: string
+      online_payment_transaction_id:
+        type: string
+      paid_medium:
+        type: integer
+      payment_date:
+        type: string
+      payment_from:
+        type: string
+      payment_month:
+        type: integer
+      payment_to:
+        type: string
+      payment_type:
+        type: string
+      remarks:
+        type: string
+      title:
+        type: string
+      transaction_cost:
+        type: number
+      updated_by:
+        type: string
+      updated_on:
+        type: string
+      updator_name:
+        type: string
+    type: object
+  models.TransactionBase:
+    properties:
+      bank_payment_from:
+        type: string
+      bank_payment_to:
+        type: string
+      bank_payment_transaction_id:
+        type: string
+      credit_amount:
+        type: number
+      debit_amount:
+        type: number
+      online_payment_from:
+        type: string
+      online_payment_name:
+        type: string
+      online_payment_to:
+        type: string
+      online_payment_transaction_id:
+        type: string
+      paid_medium:
+        type: integer
+      payment_date:
+        type: string
+      payment_from:
+        type: string
+      payment_month:
+        type: integer
+      payment_to:
+        type: string
+      payment_type:
+        type: string
+      remarks:
+        type: string
+      title:
+        type: string
+      transaction_cost:
+        type: number
+    type: object
+  models.User:
+    properties:
+      contact_number:
+        type: string
+      created_on:
+        type: string
+      deleted_on:
+        type: string
+      email:
+        type: string
+      id:
+        type: string
+      name:
+        type: string
+      password:
+        type: string
+      role:
+        items:
+          type: string
+        type: array
+      updated_on:
+        type: string
+    type: object
+  models.UserBase:
+    properties:
+      contact_number:
+        type: string
+      email:
+        type: string
+      name:
+        type: string
+      password:
+        type: string
+      role:
+        items:
+          type: string
+        type: array
+    type: object
+  models.UserProfile:
+    properties:
+      contact_number:
+        type: string
+      created_on:
+        type: string
+      deleted_on:
+        type: string
+      email:
+        type: string
+      id:
+        type: string
+      name:
+        type: string
+      picture:
+        type: string
+      updated_on:
+        type: string
+      user_id:
+        type: string
+    type: object
+  production.BatchBase:
+    properties:
+      admin_approval:
+        type: boolean
+      admin_approved_by:
+        type: string
+      batch_id:
+        type: integer
+      inventory_approval:
+        type: boolean
+    type: object
+  production.BatchItems:
+    properties:
+      batch_id:
+        type: string
+      created_on:
+        type: string
+      deleted_on:
+        type: string
+      id:
+        type: string
+      item_id:
+        description: type product id
+        type: string
+      quantity:
+        type: integer
+      updated_on:
+        type: string
+    type: object
+  production.CuttingAssignment:
+    properties:
+      created_by:
+        type: string
+      created_on:
+        type: string
+      creator_name:
+        type: string
+      cutting_assignment_id:
+        type: string
+      deleted_by:
+        type: string
+      deleted_on:
+        type: string
+      deletor_name:
+        type: string
+      id:
+        type: string
+      item_id:
+        type: string
+      order_cutting_id:
+        type: string
+      quantity:
+        type: integer
+      status:
+        type: integer
+      tailor_id:
+        type: string
+      updated_by:
+        type: string
+      updated_on:
+        type: string
+      updator_name:
+        type: string
+    type: object
+  production.CuttingAssignmentBase:
+    properties:
+      cutting_assignment_id:
+        type: string
+      item_id:
+        type: string
+      order_cutting_id:
+        type: string
+      quantity:
+        type: integer
+      status:
+        type: integer
+      tailor_id:
+        type: string
+    type: object
+  production.OrderCutting:
+    properties:
+      batch_id:
+        type: string
+      batch_item_id:
+        type: string
+      created_by:
+        type: string
+      created_on:
+        type: string
+      creator_name:
+        type: string
+      deleted_by:
+        type: string
+      deleted_on:
+        type: string
+      deletor_name:
+        type: string
+      finished:
+        type: boolean
+      id:
+        type: string
+      item_id:
+        description: Got here for query purpose to make it easier to get
+        type: string
+      order_cutting_id:
+        type: string
+      quantity:
+        type: integer
+      updated_by:
+        type: string
+      updated_on:
+        type: string
+      updator_name:
+        type: string
+    type: object
+  production.OrderCuttingBase:
+    properties:
+      batch_id:
+        type: string
+      batch_item_id:
+        type: string
+      finished:
+        type: boolean
+      item_id:
+        description: Got here for query purpose to make it easier to get
+        type: string
+      order_cutting_id:
+        type: string
+      quantity:
+        type: integer
+    type: object
+  production.ProductionBatch:
+    properties:
+      admin_approval:
+        type: boolean
+      admin_approved_by:
+        type: string
+      batch_id:
+        type: integer
+      created_on:
+        type: string
+      deleted_on:
+        type: string
+      id:
+        type: string
+      inventory_approval:
+        type: boolean
+      updated_on:
+        type: string
+    type: object
+  production.ProductionReady:
+    properties:
+      batch_id:
+        type: string
+      created_on:
+        type: string
+      deleted_on:
+        type: string
+      id:
+        type: string
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      updated_on:
+        type: string
+    type: object
+  production.ProductionReadyBase:
+    properties:
+      batch_id:
+        type: string
+      item_id:
+        type: string
+      quantity:
+        type: integer
+    type: object
+  production.QualityCheck:
+    properties:
+      approved_quantity:
+        type: integer
+      created_by:
+        type: string
+      created_on:
+        type: string
+      creator_name:
+        type: string
+      cutting_assign_id:
+        type: string
+      deleted_by:
+        type: string
+      deleted_on:
+        type: string
+      deletor_name:
+        type: string
+      id:
+        type: string
+      item_id:
+        type: string
+      quality_check_id:
+        type: string
+      rejected_quantity:
+        type: integer
+      tailor_id:
+        type: string
+      updated_by:
+        type: string
+      updated_on:
+        type: string
+      updator_name:
+        type: string
+    type: object
+  production.QualityCheckBase:
+    properties:
+      approved_quantity:
+        type: integer
+      cutting_assign_id:
+        type: string
+      item_id:
+        type: string
+      quality_check_id:
+        type: string
+      rejected_quantity:
+        type: integer
+      tailor_id:
+        type: string
+    type: object
+  production.TailorAssign:
+    properties:
+      approved_quantity:
+        type: integer
+      cutting_assign_id:
+        type: string
+      end_date:
+        type: string
+      id:
+        type: string
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      rejected_quantity:
+        type: integer
+      start_date:
+        type: string
+      tailor_assign_id:
+        type: string
+      tailor_id:
+        type: string
+    type: object
+  production.TailorAssignBase:
+    properties:
+      approved_quantity:
+        type: integer
+      cutting_assign_id:
+        type: string
+      end_date:
+        type: string
+      item_id:
+        type: string
+      quantity:
+        type: integer
+      rejected_quantity:
+        type: integer
+      start_date:
+        type: string
+      tailor_assign_id:
+        type: string
+      tailor_id:
+        type: string
+    type: object
+  requests.CreateSupplier:
+    properties:
+      address:
+        $ref: '#/definitions/models.AddressBase'
+      bank_accounts:
+        items:
+          $ref: '#/definitions/models.AccountBase'
+        type: array
+      contact_number:
+        items:
+          type: string
+        type: array
+      description:
+        type: string
+      email:
+        type: string
+      established_date:
+        type: string
+      name:
+        type: string
+      pan_number:
+        type: string
+      vat_number:
+        type: string
+    type: object
+  requests.CreateUser:
+    properties:
+      address:
+        $ref: '#/definitions/models.AddressBase'
+      bank_account:
+        items:
+          $ref: '#/definitions/models.AccountBase'
+        type: array
+      company_id:
+        type: string
+      contact_number:
+        type: string
+      documents:
+        items:
+          $ref: '#/definitions/models.DocumentBase'
+        type: array
+      email:
+        type: string
+      emergency_contact:
+        $ref: '#/definitions/models.ContactBase'
+      name:
+        type: string
+      password:
+        type: string
+      picture:
+        type: string
+      role:
+        items:
+          type: string
+        type: array
+      salary:
+        $ref: '#/definitions/models.SalaryBase'
+    type: object
+  responses.EmployeeAll:
+    properties:
+      address:
+        items:
+          $ref: '#/definitions/models.AddressBase'
+        type: array
+      bank_account:
+        items:
+          $ref: '#/definitions/models.AccountBase'
+        type: array
+      company_id:
+        type: string
+      contact_number:
+        type: string
+      created_on:
+        type: string
+      deleted_on:
+        type: string
+      document:
+        items:
+          $ref: '#/definitions/models.DocumentBase'
+        type: array
+      email:
+        type: string
+      emergency_contact:
+        items:
+          $ref: '#/definitions/models.ContactBase'
+        type: array
+      employee_profile_id:
+        type: string
+      name:
+        type: string
+      picture:
+        type: string
+      role:
+        items:
+          type: string
+        type: array
+      salary:
+        items:
+          properties:
+            amount:
+              type: number
+            effective_from:
+              type: integer
+            effective_to:
+              type: integer
+            salary_format:
+              type: integer
+            tailor_rate:
+              items:
+                $ref: '#/definitions/models.TailorRate'
+              type: array
+          type: object
+        type: array
+      user_id:
+        type: string
+    type: object
+  responses.Item:
+    properties:
+      description:
+        type: string
+      id:
+        type: string
+      item_code:
+        type: integer
+      item_name:
+        type: string
+    type: object
+  responses.SubItem:
+    properties:
+      description:
+        type: string
+      id:
+        type: string
+      item_code:
+        type: integer
+      item_name:
+        type: string
+      item_type:
+        type: integer
+      sub_item:
+        items:
+          $ref: '#/definitions/responses.Item'
+        type: array
+    type: object
+  store.Store:
+    properties:
+      created_on:
+        type: string
+      deleted_on:
+        type: string
+      description:
+        type: string
+      id:
+        type: string
+      picture:
+        items:
+          type: string
+        type: array
+      store_id:
+        type: integer
+      store_name:
+        type: string
+      store_unique_name:
+        type: string
+      updated_on:
+        type: string
+    type: object
+  store.StoreBase:
+    properties:
+      description:
+        type: string
+      picture:
+        items:
+          type: string
+        type: array
+      store_id:
+        type: integer
+      store_name:
+        type: string
+      store_unique_name:
+        type: string
+    type: object
+host: localhost:5005
+info:
+  contact:
+    name: 21557870 - Suman Chhetri
+  description: This is an API documentation of Magazine API
+  title: Magazine API Documentation
+  version: v1
+paths:
+  /account:
+    post:
+      consumes:
+      - application/json
+      description: It creates BankAccount structure
+      parameters:
+      - description: Add BankAccount
+        in: body
+        name: bank_account
+        required: true
+        schema:
+          $ref: '#/definitions/models.BankAccount'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.BankAccount'
+              type: object
+      summary: Create BankAccount
+      tags:
+      - BankAccount
+  /account/{id}:
+    delete:
+      description: Delete by accountID
+      parameters:
+      - description: Unique ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete an account
+      tags:
+      - BankAccount
+    patch:
+      consumes:
+      - application/json
+      description: Updates account of employee
+      parameters:
+      - description: Update account
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.BankAccount'
+              type: object
+      summary: Update BankAccount
+      tags:
+      - BankAccount
+  /account/id/{id}:
+    get:
+      description: Gets One BankAccount by D
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.BankAccount'
+              type: object
+      summary: Gets One BankAccount by ID
+      tags:
+      - BankAccount
+  /account/number/{account}:
+    get:
+      description: Gets BankAccount by company ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.BankAccount'
+                  type: array
+              type: object
+      summary: Gets BankAccount by company ID
+      tags:
+      - BankAccount
+  /account/profile/{id}:
+    get:
+      description: List account by creator id
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.BankAccount'
+                  type: array
+              type: object
+      summary: Lists accounts from User Id
+      tags:
+      - BankAccount
+  /address:
+    post:
+      consumes:
+      - application/json
+      description: It creates Address structure
+      parameters:
+      - description: Add Address
+        in: body
+        name: adddress
+        required: true
+        schema:
+          $ref: '#/definitions/models.Address'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Address'
+              type: object
+      summary: Create Address
+      tags:
+      - Address
+  /address/{id}:
+    delete:
+      description: Delete by addressID
+      parameters:
+      - description: Unique ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete an address
+      tags:
+      - Address
+    patch:
+      consumes:
+      - application/json
+      description: Updates address of employee
+      parameters:
+      - description: Update address
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Address'
+              type: object
+      summary: Update Address
+      tags:
+      - Address
+  /address/company/{id}:
+    get:
+      description: Gets Address by company ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Address'
+                  type: array
+              type: object
+      summary: Gets Address by company ID
+      tags:
+      - Address
+  /address/id/{id}:
+    get:
+      description: Gets One Address by D
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Address'
+              type: object
+      summary: Gets One Address by ID
+      tags:
+      - Address
+  /address/profile/{id}:
+    get:
+      description: List address by creator id
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Address'
+                  type: array
+              type: object
+      summary: Lists addresses from User Id
+      tags:
+      - Address
+  /batch_item:
+    post:
+      consumes:
+      - application/json
+      description: It creates batch for production.
+      parameters:
+      - description: Add BatchItem
+        in: body
+        name: batch_item
+        required: true
+        schema:
+          $ref: '#/definitions/production.BatchItems'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/production.BatchItems'
+      summary: Create BatchItem
+      tags:
+      - BatchItem
+  /batch_item/{batch_id}:
+    get:
+      description: List batches from database.
+      parameters:
+      - description: Batch ID
+        in: path
+        name: batch_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/production.BatchItems'
+            type: array
+      summary: Lists BatchItems
+      tags:
+      - BatchItem
+  /batch_item/{batch_id}/deleted:
+    get:
+      description: List batches for cutting.
+      parameters:
+      - description: Batch ID
+        in: path
+        name: batch_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/production.BatchItems'
+            type: array
+      summary: Lists BatchItem
+      tags:
+      - BatchItem
+  /batch_item/{id}:
+    delete:
+      description: Delete by BatchItem ID
+      parameters:
+      - description: Order Cutting ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: ""
+      summary: Soft Delete BatchItem
+      tags:
+      - BatchItem
+    patch:
+      consumes:
+      - application/json
+      description: Updates BatchItem
+      parameters:
+      - description: Update BatchItem
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      summary: Update BatchItem
+      tags:
+      - BatchItem
+  /batch_item/forcedelete/{id}:
+    delete:
+      description: Delete by BatchItem ID
+      parameters:
+      - description: BatchItem ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: ""
+      summary: Permenant Delete an BatchItem
+      tags:
+      - BatchItem
+  /batch_item/id/{id}:
+    get:
+      description: Gets One Order Cutting by ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/production.BatchItems'
+      summary: Gets One BatchItem by ID
+      tags:
+      - BatchItem
+  /contact:
+    post:
+      consumes:
+      - application/json
+      description: It creates Contact structure
+      parameters:
+      - description: Add Contact
+        in: body
+        name: adddress
+        required: true
+        schema:
+          $ref: '#/definitions/models.Contact'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Contact'
+              type: object
+      summary: Create Contact
+      tags:
+      - Contact
+  /contact/{id}:
+    delete:
+      description: Delete by contactID
+      parameters:
+      - description: Unique ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete an contact
+      tags:
+      - Contact
+    patch:
+      consumes:
+      - application/json
+      description: Updates contact of employee
+      parameters:
+      - description: Update contact
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Contact'
+              type: object
+      summary: Update Contact
+      tags:
+      - Contact
+  /contact/company/{id}:
+    get:
+      description: Gets Contact by company ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Contact'
+                  type: array
+              type: object
+      summary: Gets Contact by company ID
+      tags:
+      - Contact
+  /contact/id/{id}:
+    get:
+      description: Gets One Contact by D
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Contact'
+              type: object
+      summary: Gets One Contact by ID
+      tags:
+      - Contact
+  /contact/profile/{id}:
+    get:
+      description: List contact by creator id
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Contact'
+                  type: array
+              type: object
+      summary: Lists contactes from User Id
+      tags:
+      - Contact
+  /cuttingassign:
+    get:
+      description: List cuttings
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.CuttingAssignment'
+                  type: array
+              type: object
+      summary: Lists Cutting Assign
+      tags:
+      - CuttingAssignment
+    post:
+      consumes:
+      - application/json
+      description: It assign cutting to tailor.
+      parameters:
+      - description: Add cutting assign.
+        in: body
+        name: cuttingassign
+        required: true
+        schema:
+          $ref: '#/definitions/production.CuttingAssignmentBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/production.CuttingAssignment'
+              type: object
+      summary: Create Cutting Assign
+      tags:
+      - CuttingAssignment
+  /cuttingassign/{id}:
+    delete:
+      description: Delete by CuttingAssignment ID
+      parameters:
+      - description: CuttingAssignment ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete a cutting assign
+      tags:
+      - CuttingAssignment
+    patch:
+      consumes:
+      - application/json
+      description: Updates cutting assign attribute
+      parameters:
+      - description: CuttingAssignment ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Update cuttingassign
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/production.CuttingAssignmentBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/production.CuttingAssignment'
+              type: object
+      summary: Update CuttingAssignment
+      tags:
+      - CuttingAssignment
+  /cuttingassign/deleted:
+    get:
+      description: Lists Deleted cutting assign
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.CuttingAssignment'
+                  type: array
+              type: object
+      summary: Lists Deleted cutting assign
+      tags:
+      - CuttingAssignment
+  /cuttingassign/forcedelete/{id}:
+    delete:
+      description: Delete by CuttingAssignment ID
+      parameters:
+      - description: CuttingAssignment ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Permenant Delete an CuttingAssignment
+      tags:
+      - CuttingAssignment
+  /cuttingassign/id/{id}:
+    get:
+      description: Gets One cutting assign by id
+      parameters:
+      - description: CuttingAssignment ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/production.CuttingAssignment'
+              type: object
+      summary: Gets Cutting Assign by id
+      tags:
+      - CuttingAssignment
+  /cuttingassign/ordercutting/{id}:
+    get:
+      description: Lists cutting assign by order cutting id
+      parameters:
+      - description: Product ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.CuttingAssignment'
+                  type: array
+              type: object
+      summary: Gets Cutting Assign by Order Cutting id
+      tags:
+      - CuttingAssignment
+  /cuttingassign/product/{id}:
+    get:
+      description: Gets One cutting assign by product id
+      parameters:
+      - description: Product ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.CuttingAssignment'
+                  type: array
+              type: object
+      summary: Gets Cutting Assign by Product id
+      tags:
+      - CuttingAssignment
+  /cuttingassign/tailor/{id}:
+    get:
+      description: Gets Cutting assign by tailor id
+      parameters:
+      - description: Tailor ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.CuttingAssignment'
+                  type: array
+              type: object
+      summary: Gets Cutting Assign by tailor id
+      tags:
+      - CuttingAssignment
+  /designeritem:
+    get:
+      description: List items
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.DesignerItem'
+                  type: array
+              type: object
+      summary: Lists DesignerItem
+      tags:
+      - DesignerItem
+    post:
+      consumes:
+      - application/json
+      description: It creates items used for design.
+      parameters:
+      - description: Add DesignerItem.
+        in: body
+        name: designeritem
+        required: true
+        schema:
+          $ref: '#/definitions/inventory.DesignerItemBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.DesignerItem'
+              type: object
+      summary: Create DesignerItem
+      tags:
+      - DesignerItem
+  /designeritem/{id}:
+    delete:
+      description: Delete by DesignerItem ID
+      parameters:
+      - description: DesignerItem ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete a DesignerItem
+      tags:
+      - DesignerItem
+    patch:
+      consumes:
+      - application/json
+      description: Updates DesignerItem attribute
+      parameters:
+      - description: DesignerItem ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Update designeritem
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/inventory.DesignerItemBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.DesignerItem'
+              type: object
+      summary: Update DesignerItem
+      tags:
+      - DesignerItem
+  /designeritem/deleted:
+    get:
+      description: Lists Deleted DesignerItem
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.DesignerItem'
+                  type: array
+              type: object
+      summary: Lists Deleted DesignerItem
+      tags:
+      - DesignerItem
+  /designeritem/designer/{id}:
+    get:
+      description: Gets Purches Item by designer id
+      parameters:
+      - description: Batch ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.DesignerItem'
+                  type: array
+              type: object
+      summary: Gets DesignerItem by designer id
+      tags:
+      - DesignerItem
+  /designeritem/forcedelete/{id}:
+    delete:
+      description: Delete by DesignerItem ID
+      parameters:
+      - description: DesignerItem ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Permenant Delete an DesignerItem
+      tags:
+      - DesignerItem
+  /designeritem/id/{id}:
+    get:
+      description: Gets One DesignerItem by id
+      parameters:
+      - description: DesignerItem ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.DesignerItem'
+              type: object
+      summary: Gets DesignerItem by id
+      tags:
+      - DesignerItem
+  /designeritem/product/{id}:
+    get:
+      description: Gets One DesignerItem by product id
+      parameters:
+      - description: Product ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.DesignerItem'
+                  type: array
+              type: object
+      summary: Gets DesignerItem by Product id
+      tags:
+      - DesignerItem
+  /document:
+    post:
+      consumes:
+      - application/json
+      description: It creates Document structure
+      parameters:
+      - description: Add Document
+        in: body
+        name: adddress
+        required: true
+        schema:
+          $ref: '#/definitions/models.Document'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Document'
+              type: object
+      summary: Create Document
+      tags:
+      - Document
+  /document/{id}:
+    delete:
+      description: Delete by documentID
+      parameters:
+      - description: Unique ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete an document
+      tags:
+      - Document
+    patch:
+      consumes:
+      - application/json
+      description: Updates document of employee
+      parameters:
+      - description: Update document
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Document'
+              type: object
+      summary: Update Document
+      tags:
+      - Document
+  /document/company/{id}:
+    get:
+      description: Gets Document by company ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Document'
+                  type: array
+              type: object
+      summary: Gets Document by company ID
+      tags:
+      - Document
+  /document/id/{id}:
+    get:
+      description: Gets One Document by D
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Document'
+              type: object
+      summary: Gets One Document by ID
+      tags:
+      - Document
+  /document/profile/{id}:
+    get:
+      description: List document by creator id
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Document'
+                  type: array
+              type: object
+      summary: Lists documents from User Id
+      tags:
+      - Document
+  /employee:
+    get:
+      description: List users
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.User'
+                  type: array
+              type: object
+      summary: Lists users
+      tags:
+      - Employee
+  /employee/{id}:
+    delete:
+      description: Delete by user ID
+      parameters:
+      - description: User ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete an user
+      tags:
+      - Employee
+    patch:
+      consumes:
+      - application/json
+      description: Updates user attribute
+      parameters:
+      - description: User ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Update user
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/models.UserBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.User'
+              type: object
+      summary: Update an user
+      tags:
+      - Employee
+  /employee/contact/{contact}:
+    get:
+      description: Gets One user by Contact Number
+      parameters:
+      - description: Contact Number
+        in: path
+        name: contact_number
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.User'
+              type: object
+      summary: Gets One User by Contact Number
+      tags:
+      - Employee
+  /employee/deleted:
+    get:
+      description: Lists Deleted users
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.User'
+                  type: array
+              type: object
+      summary: Lists Deleted users
+      tags:
+      - Employee
+  /employee/email/{email}:
+    get:
+      description: Gets One user by email
+      parameters:
+      - description: Email
+        format: email
+        in: path
+        name: email
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.User'
+              type: object
+      summary: Gets One User by email
+      tags:
+      - Employee
+  /employee/id/{id}:
+    get:
+      description: Get employee details by employee profile id.
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/responses.EmployeeAll'
+              type: object
+      summary: Gets Employee By ID
+      tags:
+      - Employee
+  /employee/profile/{id}:
+    get:
+      description: Get employee details by employee profile id.
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/responses.EmployeeAll'
+              type: object
+      summary: Gets Employee profile by ID
+      tags:
+      - Employee
+  /employee/type/{type}:
+    get:
+      description: List users by type
+      parameters:
+      - description: Type
+        in: path
+        name: type
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.User'
+                  type: array
+              type: object
+      summary: Lists users by type
+      tags:
+      - Employee
+  /item:
+    get:
+      description: List items
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/responses.SubItem'
+                  type: array
+              type: object
+      summary: Lists items
+      tags:
+      - Item
+    post:
+      consumes:
+      - application/json
+      description: It creates an normal Item
+      parameters:
+      - description: Add Item
+        in: body
+        name: Item
+        required: true
+        schema:
+          $ref: '#/definitions/models.ItemBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Item'
+              type: object
+      summary: Create Item
+      tags:
+      - Item
+  /item/{id}:
+    delete:
+      description: Delete by item id
+      parameters:
+      - description: Item ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete a item
+      tags:
+      - Item
+    patch:
+      consumes:
+      - application/json
+      description: Updates item attribute
+      parameters:
+      - description: Item ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Update item
+        in: body
+        name: item
+        required: true
+        schema:
+          $ref: '#/definitions/models.ItemBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Item'
+              type: object
+      summary: Update an item
+      tags:
+      - Item
+  /item/code/{code}:
+    get:
+      description: Gets One Item by Code
+      parameters:
+      - description: Item Code
+        in: path
+        name: code
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Item'
+              type: object
+      summary: Gets One Item by Code
+      tags:
+      - Item
+  /item/deleted:
+    get:
+      description: Lists Deleted users
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Item'
+                  type: array
+              type: object
+      summary: Lists Deleted items
+      tags:
+      - Item
+  /item/id/:id:
+    get:
+      description: Gets one item by ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Item'
+              type: object
+      summary: Gets One Item by ID
+      tags:
+      - Item
+  /item/name/{name}:
+    get:
+      description: Gets One Item by Name
+      parameters:
+      - description: Name
+        in: path
+        name: name
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Item'
+              type: object
+      summary: Gets One Item by Name
+      tags:
+      - Item
+  /item/nextId:
+    get:
+      description: Gets Next code for item
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Gets Next Code for item
+      tags:
+      - Item
+  /item/type:
+    get:
+      description: List item types
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: object
+              type: object
+      summary: Lists item types
+      tags:
+      - Item
+  /item/type/{item_type}:
+    get:
+      description: Lists items by type
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Item'
+                  type: array
+              type: object
+      summary: Lists items by type
+      tags:
+      - Item
+  /itemproduction:
+    get:
+      description: List items
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.ItemProduction'
+                  type: array
+              type: object
+      summary: Lists ItemProduction
+      tags:
+      - ItemProduction
+    post:
+      consumes:
+      - application/json
+      description: It creates items used for production.
+      parameters:
+      - description: Add ItemProduction.
+        in: body
+        name: itemproduction
+        required: true
+        schema:
+          $ref: '#/definitions/inventory.ItemProductionBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.ItemProduction'
+              type: object
+      summary: Create ItemProduction
+      tags:
+      - ItemProduction
+  /itemproduction/{id}:
+    delete:
+      description: Delete by ItemProduction ID
+      parameters:
+      - description: ItemProduction ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete a ItemProduction
+      tags:
+      - ItemProduction
+    patch:
+      consumes:
+      - application/json
+      description: Updates ItemProduction attribute
+      parameters:
+      - description: ItemProduction ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Update itemproduction
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/inventory.ItemProductionBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.ItemProduction'
+              type: object
+      summary: Update ItemProduction
+      tags:
+      - ItemProduction
+  /itemproduction/batch/{id}:
+    get:
+      description: Gets Purches Item by batch id
+      parameters:
+      - description: Batch ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.ItemProduction'
+                  type: array
+              type: object
+      summary: Gets ItemProduction by batch id
+      tags:
+      - ItemProduction
+  /itemproduction/deleted:
+    get:
+      description: Lists Deleted ItemProduction
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.ItemProduction'
+                  type: array
+              type: object
+      summary: Lists Deleted ItemProduction
+      tags:
+      - ItemProduction
+  /itemproduction/forcedelete/{id}:
+    delete:
+      description: Delete by ItemProduction ID
+      parameters:
+      - description: ItemProduction ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Permenant Delete an ItemProduction
+      tags:
+      - ItemProduction
+  /itemproduction/id/{id}:
+    get:
+      description: Gets One ItemProduction by id
+      parameters:
+      - description: ItemProduction ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.ItemProduction'
+              type: object
+      summary: Gets ItemProduction by id
+      tags:
+      - ItemProduction
+  /itemproduction/product/{id}:
+    get:
+      description: Gets One ItemProduction by product id
+      parameters:
+      - description: Product ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.ItemProduction'
+                  type: array
+              type: object
+      summary: Gets ItemProduction by Product id
+      tags:
+      - ItemProduction
+  /itemproduction/status-attribute:
+    get:
+      description: List status attribute
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: object
+              type: object
+      summary: Lists staus attribute
+      tags:
+      - ItemProduction
+  /itemproduction/status/{status}:
+    get:
+      description: Gets Purches Item by status
+      parameters:
+      - description: Status
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.ItemProduction'
+                  type: array
+              type: object
+      summary: Gets ItemProduction by status
+      tags:
+      - ItemProduction
+  /ordercutting:
+    get:
+      description: List orders for cutting.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.OrderCutting'
+                  type: array
+              type: object
+      summary: Lists OrderCutting
+      tags:
+      - OrderCutting
+    post:
+      consumes:
+      - application/json
+      description: It creates order for cutting.
+      parameters:
+      - description: Add Ordercutting
+        in: body
+        name: ordercutting
+        required: true
+        schema:
+          $ref: '#/definitions/production.OrderCuttingBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/production.OrderCutting'
+              type: object
+      summary: Create OrderCutting
+      tags:
+      - OrderCutting
+  /ordercutting/{id}:
+    delete:
+      description: Delete by OrderCutting ID
+      parameters:
+      - description: Order Cutting ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete OrderCutting
+      tags:
+      - OrderCutting
+    patch:
+      consumes:
+      - application/json
+      description: Updates OrderCutting
+      parameters:
+      - description: Update OrderCutting
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/production.OrderCutting'
+              type: object
+      summary: Update OrderCutting
+      tags:
+      - OrderCutting
+  /ordercutting/batch/{id}:
+    get:
+      description: Gets Cutting Order by Batch ID.
+      parameters:
+      - description: ID
+        in: path
+        name: batch_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.OrderCutting'
+                  type: array
+              type: object
+      summary: Gets OrderCutting by Batch ID
+      tags:
+      - OrderCutting
+  /ordercutting/deleted:
+    get:
+      description: List orders for cutting.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.OrderCutting'
+                  type: array
+              type: object
+      summary: Lists OrderCutting
+      tags:
+      - OrderCutting
+  /ordercutting/forcedelete/{id}:
+    delete:
+      description: Delete by OrderCutting ID
+      parameters:
+      - description: OrderCutting ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Permenant Delete an OrderCutting
+      tags:
+      - OrderCutting
+  /ordercutting/id/{id}:
+    get:
+      description: Gets One Order Cutting by ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/production.OrderCutting'
+              type: object
+      summary: Gets One OrderCutting by ID
+      tags:
+      - OrderCutting
+  /ordercutting/order_cutting/{id}:
+    get:
+      description: Gets One Order Cutting by ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/production.OrderCutting'
+              type: object
+      summary: Gets One OrderCutting by ID
+      tags:
+      - OrderCutting
+  /ordercutting/product/{id}:
+    get:
+      description: Gets Cutting Order by product ID.
+      parameters:
+      - description: ID
+        in: path
+        name: product_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.OrderCutting'
+                  type: array
+              type: object
+      summary: Gets OrderCutting by Product ID
+      tags:
+      - OrderCutting
+  /payment_type:
+    get:
+      description: List payment_types
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.PaymentType'
+                  type: array
+              type: object
+      summary: Lists payment_types
+      tags:
+      - PaymentType
+    post:
+      consumes:
+      - application/json
+      description: It creates an normal PaymentType
+      parameters:
+      - description: Add PaymentType
+        in: body
+        name: PaymentType
+        required: true
+        schema:
+          $ref: '#/definitions/models.PaymentTypeBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.PaymentType'
+              type: object
+      summary: Create PaymentType
+      tags:
+      - PaymentType
+  /payment_type/{id}:
+    delete:
+      description: Delete by payment_type id
+      parameters:
+      - description: PaymentType ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete a payment_type
+      tags:
+      - PaymentType
+    patch:
+      consumes:
+      - application/json
+      description: Updates payment_type attribute
+      parameters:
+      - description: PaymentType ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Update payment_type
+        in: body
+        name: payment_type
+        required: true
+        schema:
+          $ref: '#/definitions/models.PaymentTypeBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.PaymentType'
+              type: object
+      summary: Update an payment_type
+      tags:
+      - PaymentType
+  /payment_type/deleted:
+    get:
+      description: Lists Deleted users
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.PaymentType'
+                  type: array
+              type: object
+      summary: Lists Deleted payment_types
+      tags:
+      - PaymentType
+  /payment_type/id/:id:
+    get:
+      description: Gets one payment_type by ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.PaymentType'
+              type: object
+      summary: Gets One PaymentType by ID
+      tags:
+      - PaymentType
+  /payment_type/name/{name}:
+    get:
+      description: Gets One PaymentType by Name
+      parameters:
+      - description: Name
+        in: path
+        name: name
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.PaymentType'
+              type: object
+      summary: Gets One PaymentType by Name
+      tags:
+      - PaymentType
+  /preset:
+    get:
+      description: List presets
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Preset'
+                  type: array
+              type: object
+      summary: Lists presets
+      tags:
+      - Preset
+    post:
+      consumes:
+      - application/json
+      description: It creates an normal Preset
+      parameters:
+      - description: Add Preset
+        in: body
+        name: Preset
+        required: true
+        schema:
+          $ref: '#/definitions/models.PresetBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Preset'
+              type: object
+      summary: Create Preset
+      tags:
+      - Preset
+  /preset/{id}:
+    delete:
+      description: Delete by preset id
+      parameters:
+      - description: Preset ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete a preset
+      tags:
+      - Preset
+    patch:
+      consumes:
+      - application/json
+      description: Updates preset attribute
+      parameters:
+      - description: Preset ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Update preset
+        in: body
+        name: preset
+        required: true
+        schema:
+          $ref: '#/definitions/models.PresetBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Preset'
+              type: object
+      summary: Update an preset
+      tags:
+      - Preset
+  /preset/code/{code}:
+    get:
+      description: List Preset by Code
+      parameters:
+      - description: Preset Code
+        in: path
+        name: code
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Preset'
+                  type: array
+              type: object
+      summary: List Preset by Code
+      tags:
+      - Preset
+  /preset/deleted:
+    get:
+      description: Lists Deleted users
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Preset'
+                  type: array
+              type: object
+      summary: Lists Deleted presets
+      tags:
+      - Preset
+  /preset/id/:id:
+    get:
+      description: Gets one preset by ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Preset'
+              type: object
+      summary: Gets One Preset by ID
+      tags:
+      - Preset
+  /preset/iteam_id/:id:
+    get:
+      description: List preset by preset ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Preset'
+              type: object
+      summary: Lists Preset by preset ID
+      tags:
+      - Preset
+  /production_batch:
+    get:
+      description: List batchs from database.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/production.ProductionBatch'
+            type: array
+      summary: Lists ProductionBatch
+      tags:
+      - ProductionBatch
+    post:
+      consumes:
+      - application/json
+      description: It creates batch for production.
+      parameters:
+      - description: Add ProductionBatch
+        in: body
+        name: production_batch
+        required: true
+        schema:
+          $ref: '#/definitions/production.BatchBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/production.ProductionBatch'
+      summary: Create ProductionBatch
+      tags:
+      - ProductionBatch
+  /production_batch/{id}:
+    delete:
+      description: Delete by ProductionBatch ID
+      parameters:
+      - description: Order Cutting ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: ""
+      summary: Soft Delete ProductionBatch
+      tags:
+      - ProductionBatch
+    patch:
+      consumes:
+      - application/json
+      description: Updates ProductionBatch
+      parameters:
+      - description: Update ProductionBatch
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      summary: Update ProductionBatch
+      tags:
+      - ProductionBatch
+  /production_batch/batch/{batch_id}:
+    get:
+      description: Gets ProductionBatch by batch ID.
+      parameters:
+      - description: ID
+        in: path
+        name: batch_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/production.ProductionBatch'
+      summary: Gets ProductionBatch by batch ID
+      tags:
+      - ProductionBatch
+  /production_batch/deleted:
+    get:
+      description: List batchs for cutting.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/production.ProductionBatch'
+            type: array
+      summary: Lists ProductionBatch
+      tags:
+      - ProductionBatch
+  /production_batch/forcedelete/{id}:
+    delete:
+      description: Delete by ProductionBatch ID
+      parameters:
+      - description: ProductionBatch ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: ""
+      summary: Permenant Delete an ProductionBatch
+      tags:
+      - ProductionBatch
+  /production_batch/id/{id}:
+    get:
+      description: Gets One Order Cutting by ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/production.ProductionBatch'
+      summary: Gets One ProductionBatch by ID
+      tags:
+      - ProductionBatch
+  /productionreceive:
+    get:
+      description: List items
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.ProductionReceive'
+                  type: array
+              type: object
+      summary: Lists ProductionReceive
+      tags:
+      - ProductionReceive
+    post:
+      consumes:
+      - application/json
+      description: It creates items used for production.
+      parameters:
+      - description: Add ProductionReceive.
+        in: body
+        name: productionreceive
+        required: true
+        schema:
+          $ref: '#/definitions/inventory.ProductionReceiveBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.ProductionReceive'
+              type: object
+      summary: Create ProductionReceive
+      tags:
+      - ProductionReceive
+  /productionreceive/{id}:
+    delete:
+      description: Delete by ProductionReceive ID
+      parameters:
+      - description: ProductionReceive ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete a ProductionReceive
+      tags:
+      - ProductionReceive
+    patch:
+      consumes:
+      - application/json
+      description: Updates ProductionReceive attribute
+      parameters:
+      - description: ProductionReceive ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Update productionreceive
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/inventory.ProductionReceiveBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.ProductionReceive'
+              type: object
+      summary: Update ProductionReceive
+      tags:
+      - ProductionReceive
+  /productionreceive/batch/{id}:
+    get:
+      description: Gets Purches Item by batch id
+      parameters:
+      - description: Batch ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.ProductionReceive'
+                  type: array
+              type: object
+      summary: Gets ProductionReceive by batch id
+      tags:
+      - ProductionReceive
+  /productionreceive/deleted:
+    get:
+      description: Lists Deleted ProductionReceive
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.ProductionReceive'
+                  type: array
+              type: object
+      summary: Lists Deleted ProductionReceive
+      tags:
+      - ProductionReceive
+  /productionreceive/forcedelete/{id}:
+    delete:
+      description: Delete by ProductionReceive ID
+      parameters:
+      - description: ProductionReceive ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Permenant Delete an ProductionReceive
+      tags:
+      - ProductionReceive
+  /productionreceive/id/{id}:
+    get:
+      description: Gets One ProductionReceive by id
+      parameters:
+      - description: ProductionReceive ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.ProductionReceive'
+              type: object
+      summary: Gets ProductionReceive by id
+      tags:
+      - ProductionReceive
+  /productionreceive/product/{id}:
+    get:
+      description: Gets One ProductionReceive by product id
+      parameters:
+      - description: Product ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.ProductionReceive'
+                  type: array
+              type: object
+      summary: Gets ProductionReceive by Product id
+      tags:
+      - ProductionReceive
+  /productready:
+    get:
+      description: List product ready
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.ProductionReady'
+                  type: array
+              type: object
+      summary: Lists Product Ready
+      tags:
+      - ProductionReady
+    post:
+      consumes:
+      - application/json
+      description: It creates product ready after production.
+      parameters:
+      - description: Add Product ready.
+        in: body
+        name: productready
+        required: true
+        schema:
+          $ref: '#/definitions/production.ProductionReadyBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/production.ProductionReady'
+              type: object
+      summary: Create Product Ready
+      tags:
+      - ProductionReady
+  /productready/{id}:
+    delete:
+      description: Delete by ProductionReady ID
+      parameters:
+      - description: ProductionReady ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete a cutting assign
+      tags:
+      - ProductionReady
+    patch:
+      consumes:
+      - application/json
+      description: Updates cutting assign attribute
+      parameters:
+      - description: ProductionReady ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Update productready
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/production.ProductionReadyBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/production.ProductionReady'
+              type: object
+      summary: Update ProductionReady
+      tags:
+      - ProductionReady
+  /productready/batch/{id}:
+    get:
+      description: Gets Cutting assign by batch id
+      parameters:
+      - description: Tailor ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.ProductionReady'
+                  type: array
+              type: object
+      summary: Gets Product Ready by batch id
+      tags:
+      - ProductionReady
+  /productready/deleted:
+    get:
+      description: Lists Deleted cutting assign
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.ProductionReady'
+                  type: array
+              type: object
+      summary: Lists Deleted cutting assign
+      tags:
+      - ProductionReady
+  /productready/forcedelete/{id}:
+    delete:
+      description: Delete by ProductionReady ID
+      parameters:
+      - description: ProductionReady ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Permenant Delete an ProductionReady
+      tags:
+      - ProductionReady
+  /productready/id/{id}:
+    get:
+      description: Gets One cutting assign by id
+      parameters:
+      - description: ProductionReady ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/production.ProductionReady'
+              type: object
+      summary: Gets Product Ready by id
+      tags:
+      - ProductionReady
+  /productready/product/{id}:
+    get:
+      description: Gets One cutting assign by product id
+      parameters:
+      - description: Product ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.ProductionReady'
+                  type: array
+              type: object
+      summary: Gets Product Ready by Product id
+      tags:
+      - ProductionReady
+  /purchaseitem:
+    get:
+      description: List items
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.PurchaseItem'
+                  type: array
+              type: object
+      summary: Lists PurchaseItem
+      tags:
+      - PurchaseItem
+    post:
+      consumes:
+      - application/json
+      description: It assign cutting to tailor.
+      parameters:
+      - description: Add purches item.
+        in: body
+        name: purchaseitem
+        required: true
+        schema:
+          $ref: '#/definitions/inventory.PurchaseItemBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.PurchaseItem'
+              type: object
+      summary: Create PurchaseItem
+      tags:
+      - PurchaseItem
+  /purchaseitem/{id}:
+    delete:
+      description: Delete by PurchaseItem ID
+      parameters:
+      - description: PurchaseItem ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete a purches item
+      tags:
+      - PurchaseItem
+    patch:
+      consumes:
+      - application/json
+      description: Updates purches item attribute
+      parameters:
+      - description: PurchaseItem ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Update purchaseitem
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/inventory.PurchaseItemBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.PurchaseItem'
+              type: object
+      summary: Update PurchaseItem
+      tags:
+      - PurchaseItem
+  /purchaseitem/deleted:
+    get:
+      description: Lists Deleted purches item
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.PurchaseItem'
+                  type: array
+              type: object
+      summary: Lists Deleted purches item
+      tags:
+      - PurchaseItem
+  /purchaseitem/forcedelete/{id}:
+    delete:
+      description: Delete by PurchaseItem ID
+      parameters:
+      - description: PurchaseItem ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Permenant Delete an PurchaseItem
+      tags:
+      - PurchaseItem
+  /purchaseitem/id/{id}:
+    get:
+      description: Gets One purches item by id
+      parameters:
+      - description: PurchaseItem ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.PurchaseItem'
+              type: object
+      summary: Gets PurchaseItem by id
+      tags:
+      - PurchaseItem
+  /purchaseitem/product/{id}:
+    get:
+      description: Gets One purches item by product id
+      parameters:
+      - description: Product ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.PurchaseItem'
+                  type: array
+              type: object
+      summary: Gets PurchaseItem by Product id
+      tags:
+      - PurchaseItem
+  /purchaseitem/supplier/{id}:
+    get:
+      description: Gets Purchase Item by tailor id
+      parameters:
+      - description: Tailor ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.PurchaseItem'
+                  type: array
+              type: object
+      summary: Gets PurchaseItem by tailor id
+      tags:
+      - PurchaseItem
+  /purchasereturn:
+    get:
+      description: List items
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.PurchaseReturnStock'
+                  type: array
+              type: object
+      summary: Lists PurchaseReturn
+      tags:
+      - PurchaseReturn
+    post:
+      consumes:
+      - application/json
+      description: It assign cutting to tailor.
+      parameters:
+      - description: Add purches item.
+        in: body
+        name: purchasereturn
+        required: true
+        schema:
+          $ref: '#/definitions/inventory.PurchaseReturnStockBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.PurchaseReturnStock'
+              type: object
+      summary: Create PurchaseReturn
+      tags:
+      - PurchaseReturn
+  /purchasereturn/{id}:
+    delete:
+      description: Delete by PurchaseReturn ID
+      parameters:
+      - description: PurchaseReturn ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete a purches item
+      tags:
+      - PurchaseReturn
+    patch:
+      consumes:
+      - application/json
+      description: Updates purches item attribute
+      parameters:
+      - description: PurchaseReturn ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Update purchasereturn
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/inventory.PurchaseReturnStockBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.PurchaseReturnStock'
+              type: object
+      summary: Update PurchaseReturn
+      tags:
+      - PurchaseReturn
+  /purchasereturn/deleted:
+    get:
+      description: Lists Deleted purches item
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.PurchaseReturnStock'
+                  type: array
+              type: object
+      summary: Lists Deleted purches item
+      tags:
+      - PurchaseReturn
+  /purchasereturn/forcedelete/{id}:
+    delete:
+      description: Delete by PurchaseReturn ID
+      parameters:
+      - description: PurchaseReturn ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Permenant Delete an PurchaseReturn
+      tags:
+      - PurchaseReturn
+  /purchasereturn/id/{id}:
+    get:
+      description: Gets One purches item by id
+      parameters:
+      - description: PurchaseReturn ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.PurchaseReturnStock'
+              type: object
+      summary: Gets PurchaseReturn by id
+      tags:
+      - PurchaseReturn
+  /purchasereturn/product/{id}:
+    get:
+      description: Gets One purches item by product id
+      parameters:
+      - description: Product ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.PurchaseReturnStock'
+                  type: array
+              type: object
+      summary: Gets PurchaseReturn by Product id
+      tags:
+      - PurchaseReturn
+  /purchasereturn/supplier/{id}:
+    get:
+      description: Gets Purchase Item by tailor id
+      parameters:
+      - description: Tailor ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.PurchaseReturnStock'
+                  type: array
+              type: object
+      summary: Gets PurchaseReturn by tailor id
+      tags:
+      - PurchaseReturn
+  /qualitycheck:
+    get:
+      description: List quality checks records.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.QualityCheck'
+                  type: array
+              type: object
+      summary: Lists Quality Check
+      tags:
+      - QualityChecking
+    post:
+      consumes:
+      - application/json
+      description: Quality checking record.
+      parameters:
+      - description: Add Quality Check.
+        in: body
+        name: QualityCheck
+        required: true
+        schema:
+          $ref: '#/definitions/production.QualityCheckBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/production.QualityCheck'
+              type: object
+      summary: Create Quality Check
+      tags:
+      - QualityChecking
+  /qualitycheck/{id}:
+    delete:
+      description: Delete by QualityCheck ID
+      parameters:
+      - description: QualityCheck ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete a Quality Check
+      tags:
+      - QualityChecking
+    patch:
+      consumes:
+      - application/json
+      description: Updates Quality Check attribute
+      parameters:
+      - description: QualityCheck ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Update QualityCheck
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/production.QualityCheckBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/production.QualityCheck'
+              type: object
+      summary: Update QualityCheck
+      tags:
+      - QualityChecking
+  /qualitycheck/cuttingassign/{id}:
+    get:
+      description: List Quality Check by cutting assign id
+      parameters:
+      - description: Cutting Assign ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.QualityCheck'
+                  type: array
+              type: object
+      summary: list Quality Check by cutting assign id
+      tags:
+      - QualityChecking
+  /qualitycheck/deleted:
+    get:
+      description: Lists Deleted Quality Check
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.QualityCheck'
+                  type: array
+              type: object
+      summary: Lists Deleted Quality Check
+      tags:
+      - QualityChecking
+  /qualitycheck/forcedelete/{id}:
+    delete:
+      description: Delete by QualityCheck ID
+      parameters:
+      - description: QualityCheck ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Permenant Delete an QualityCheck
+      tags:
+      - QualityChecking
+  /qualitycheck/id/{id}:
+    get:
+      description: Gets One Quality Check by id
+      parameters:
+      - description: QualityCheck ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/production.QualityCheck'
+              type: object
+      summary: Gets Quality Check by id
+      tags:
+      - QualityChecking
+  /qualitycheck/product/{id}:
+    get:
+      description: List Quality Check by  product id
+      parameters:
+      - description: Product ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.QualityCheck'
+                  type: array
+              type: object
+      summary: list Quality Check by product id
+      tags:
+      - QualityChecking
+  /qualitycheck/quality_check/{id}:
+    get:
+      description: Gets One Quality Check by id
+      parameters:
+      - description: QualityCheck ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/production.QualityCheck'
+              type: object
+      summary: Gets Quality Check by id
+      tags:
+      - QualityChecking
+  /qualitycheck/tailor/{id}:
+    get:
+      description: List Quality Check by tailor id
+      parameters:
+      - description: Tailor ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.QualityCheck'
+                  type: array
+              type: object
+      summary: list Quality Check by tailor id
+      tags:
+      - QualityChecking
+  /salary:
+    get:
+      description: List salaries of all employee
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.SalaryBase'
+                  type: array
+              type: object
+      summary: Lists salaries
+      tags:
+      - Salary
+    post:
+      consumes:
+      - application/json
+      description: It creates salary structure for employee
+      parameters:
+      - description: Add salary
+        in: body
+        name: salary
+        required: true
+        schema:
+          $ref: '#/definitions/models.SalaryBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.SalaryBase'
+              type: object
+      summary: Create Salary
+      tags:
+      - Salary
+  /salary/{id}:
+    delete:
+      description: Delete by employee ID, or companyId or Id
+      parameters:
+      - description: Unique ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete an salary for employee
+      tags:
+      - Salary
+    get:
+      description: Gets One Employee's salary by ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Salary'
+              type: object
+      summary: Gets One Employee's salary by ID
+      tags:
+      - Salary
+    patch:
+      consumes:
+      - application/json
+      description: Updates salary of employee
+      parameters:
+      - description: Update Salary of employee
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Salary'
+              type: object
+      summary: Update salary
+      tags:
+      - Salary
+  /salary/comp_id/{id}:
+    get:
+      description: Gets One Employee's salary by company ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Salary'
+              type: object
+      summary: Gets One Employee's salary by company ID
+      tags:
+      - Salary
+  /salary/emp_id/{id}:
+    get:
+      description: Gets One Employee's salary by employee ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Salary'
+              type: object
+      summary: Gets One Employee's salary by employee ID
+      tags:
+      - Salary
+  /salary/id/{id}:
+    get:
+      description: Gets One Employee's salary by ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Salary'
+              type: object
+      summary: Gets One Employee's salary by ID
+      tags:
+      - Salary
+  /salary/salary-format:
+    get:
+      description: List salaries formats
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: object
+              type: object
+      summary: Lists salary format
+      tags:
+      - Salary
+  /salary/tailor-attribute:
+    get:
+      description: List tailor attribute
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: object
+              type: object
+      summary: Lists tailor attribute
+      tags:
+      - Salary
+  /salesitem:
+    get:
+      description: List items
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.SalesItem'
+                  type: array
+              type: object
+      summary: Lists SalesItem
+      tags:
+      - SalesItem
+    post:
+      consumes:
+      - application/json
+      description: It assign cutting to tailor.
+      parameters:
+      - description: Add Sales Item.
+        in: body
+        name: salesitem
+        required: true
+        schema:
+          $ref: '#/definitions/inventory.SalesItemBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.SalesItem'
+              type: object
+      summary: Create SalesItem
+      tags:
+      - SalesItem
+  /salesitem/{id}:
+    delete:
+      description: Delete by SalesItem ID
+      parameters:
+      - description: SalesItem ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete a Sales Item
+      tags:
+      - SalesItem
+    patch:
+      consumes:
+      - application/json
+      description: Updates Sales Item attribute
+      parameters:
+      - description: SalesItem ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Update salesitem
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/inventory.SalesItemBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.SalesItem'
+              type: object
+      summary: Update SalesItem
+      tags:
+      - SalesItem
+  /salesitem/deleted:
+    get:
+      description: Lists Deleted Sales Item
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.SalesItem'
+                  type: array
+              type: object
+      summary: Lists Deleted Sales Item
+      tags:
+      - SalesItem
+  /salesitem/forcedelete/{id}:
+    delete:
+      description: Delete by SalesItem ID
+      parameters:
+      - description: SalesItem ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Permenant Delete an SalesItem
+      tags:
+      - SalesItem
+  /salesitem/id/{id}:
+    get:
+      description: Gets One Sales Item by id
+      parameters:
+      - description: SalesItem ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.SalesItem'
+              type: object
+      summary: Gets SalesItem by id
+      tags:
+      - SalesItem
+  /salesitem/product/{id}:
+    get:
+      description: Gets One Sales Item by product id
+      parameters:
+      - description: Product ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.SalesItem'
+                  type: array
+              type: object
+      summary: Gets SalesItem by Product id
+      tags:
+      - SalesItem
+  /salesitem/store/{id}:
+    get:
+      description: Gets Sales Item by tailor id
+      parameters:
+      - description: Tailor ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.SalesItem'
+                  type: array
+              type: object
+      summary: Gets SalesItem by tailor id
+      tags:
+      - SalesItem
+  /salesreturn:
+    get:
+      description: List items
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.SalesReturnStock'
+                  type: array
+              type: object
+      summary: Lists SalesReturn
+      tags:
+      - SalesReturn
+    post:
+      consumes:
+      - application/json
+      description: It assign cutting to tailor.
+      parameters:
+      - description: Add Sales Item.
+        in: body
+        name: salesreturn
+        required: true
+        schema:
+          $ref: '#/definitions/inventory.SalesReturnStockBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.SalesReturnStock'
+              type: object
+      summary: Create SalesReturn
+      tags:
+      - SalesReturn
+  /salesreturn/{id}:
+    delete:
+      description: Delete by SalesReturn ID
+      parameters:
+      - description: SalesReturn ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete a Sales Item
+      tags:
+      - SalesReturn
+    patch:
+      consumes:
+      - application/json
+      description: Updates Sales Item attribute
+      parameters:
+      - description: SalesReturn ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Update salesreturn
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/inventory.SalesReturnStockBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.SalesReturnStock'
+              type: object
+      summary: Update SalesReturn
+      tags:
+      - SalesReturn
+  /salesreturn/deleted:
+    get:
+      description: Lists Deleted Sales Item
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.SalesReturnStock'
+                  type: array
+              type: object
+      summary: Lists Deleted Sales Item
+      tags:
+      - SalesReturn
+  /salesreturn/forcedelete/{id}:
+    delete:
+      description: Delete by SalesReturn ID
+      parameters:
+      - description: SalesReturn ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Permenant Delete an SalesReturn
+      tags:
+      - SalesReturn
+  /salesreturn/id/{id}:
+    get:
+      description: Gets One Sales Item by id
+      parameters:
+      - description: SalesReturn ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/inventory.SalesReturnStock'
+              type: object
+      summary: Gets SalesReturn by id
+      tags:
+      - SalesReturn
+  /salesreturn/product/{id}:
+    get:
+      description: Gets One Sales Item by product id
+      parameters:
+      - description: Product ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.SalesReturnStock'
+                  type: array
+              type: object
+      summary: Gets SalesReturn by Product id
+      tags:
+      - SalesReturn
+  /salesreturn/store/{id}:
+    get:
+      description: Gets Sales Item by tailor id
+      parameters:
+      - description: Tailor ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/inventory.SalesReturnStock'
+                  type: array
+              type: object
+      summary: Gets SalesReturn by tailor id
+      tags:
+      - SalesReturn
+  /store:
+    get:
+      description: List stores
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/store.Store'
+                  type: array
+              type: object
+      summary: Lists stores
+      tags:
+      - Store
+    post:
+      consumes:
+      - application/json
+      description: It creates Store
+      parameters:
+      - description: Add Store
+        in: body
+        name: Store
+        required: true
+        schema:
+          $ref: '#/definitions/store.StoreBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/store.Store'
+              type: object
+      summary: Create Store
+      tags:
+      - Store
+  /store/{id}:
+    delete:
+      description: Delete by store id
+      parameters:
+      - description: Store ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete a store
+      tags:
+      - Store
+    patch:
+      consumes:
+      - application/json
+      description: Updates store attribute
+      parameters:
+      - description: Store ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Update store
+        in: body
+        name: store
+        required: true
+        schema:
+          $ref: '#/definitions/store.StoreBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/store.Store'
+              type: object
+      summary: Update an store
+      tags:
+      - Store
+  /store/deleted:
+    get:
+      description: Lists Deleted users
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/store.Store'
+                  type: array
+              type: object
+      summary: Lists Deleted stores
+      tags:
+      - Store
+  /store/email/{email}:
+    get:
+      description: Gets One Store by Email
+      parameters:
+      - description: Email
+        in: path
+        name: email
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/store.Store'
+              type: object
+      summary: Gets One Store by Email
+      tags:
+      - Store
+  /store/id/:id:
+    get:
+      description: Gets one store by ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/store.Store'
+              type: object
+      summary: Gets One Store by ID
+      tags:
+      - Store
+  /store/name/{name}:
+    get:
+      description: Gets One Store by Name
+      parameters:
+      - description: Name
+        in: path
+        name: name
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/store.Store'
+              type: object
+      summary: Gets One Store by Name
+      tags:
+      - Store
+  /store/number/{number}:
+    get:
+      description: Gets One Store by Number
+      parameters:
+      - description: Number
+        in: path
+        name: number
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/store.Store'
+              type: object
+      summary: Gets One Store by Number
+      tags:
+      - Store
+  /supplier:
+    get:
+      description: List suppliers
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.SupplierBase'
+                  type: array
+              type: object
+      summary: List all suppliers.
+      tags:
+      - Supplier
+    post:
+      consumes:
+      - application/json
+      description: It creates Supplier.
+      parameters:
+      - description: Add Supplier
+        in: body
+        name: supplier
+        required: true
+        schema:
+          $ref: '#/definitions/requests.CreateSupplier'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/requests.CreateSupplier'
+              type: object
+      summary: Create Supplier
+      tags:
+      - Supplier
+  /supplier/{id}:
+    delete:
+      description: Delete supplier by ID
+      parameters:
+      - description: Supplier ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete a supplier
+      tags:
+      - Supplier
+    patch:
+      consumes:
+      - application/json
+      description: Updates supplier
+      parameters:
+      - description: Update Supplier
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Suppliers'
+              type: object
+      summary: Update supplier
+      tags:
+      - Supplier
+  /supplier/deleted:
+    get:
+      description: List deleted suppliers
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Suppliers'
+                  type: array
+              type: object
+      summary: List all deleted suppliers
+      tags:
+      - Supplier
+  /supplier/force/{id}:
+    delete:
+      description: Delete supplier by ID
+      parameters:
+      - description: Supplier ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Permanent Delete a supplier
+      tags:
+      - Supplier
+  /supplier/id/{id}:
+    get:
+      description: Get supplier by id
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Suppliers'
+              type: object
+      summary: Get supplier by id
+      tags:
+      - Supplier
+  /supplier/search/{query}:
+    get:
+      description: List suppliers
+      parameters:
+      - description: Query
+        in: path
+        name: query
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Suppliers'
+                  type: array
+              type: object
+      summary: List suppliers
+      tags:
+      - Supplier
+  /tailorassign:
+    get:
+      description: List assigns for cutting.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.TailorAssign'
+                  type: array
+              type: object
+      summary: Lists TailorAssign
+      tags:
+      - TailorAssign
+    post:
+      consumes:
+      - application/json
+      description: It creates assign for cutting.
+      parameters:
+      - description: Add TailorAssign
+        in: body
+        name: tailorassign
+        required: true
+        schema:
+          $ref: '#/definitions/production.TailorAssignBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/production.TailorAssign'
+              type: object
+      summary: Create TailorAssign
+      tags:
+      - TailorAssign
+  /tailorassign/{id}:
+    delete:
+      description: Delete by TailorAssign ID
+      parameters:
+      - description: assign Cutting ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete TailorAssign
+      tags:
+      - TailorAssign
+    patch:
+      consumes:
+      - application/json
+      description: Updates TailorAssign
+      parameters:
+      - description: Update TailorAssign
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/production.TailorAssign'
+              type: object
+      summary: Update TailorAssign
+      tags:
+      - TailorAssign
+  /tailorassign/cutting_assign/{id}:
+    get:
+      description: Gets Cutting assign by CuttingAssign ID.
+      parameters:
+      - description: CuttingAssign ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/production.TailorAssign'
+      summary: Gets TailorAssign by CuttingAssign ID
+      tags:
+      - TailorAssign
+  /tailorassign/deleted:
+    get:
+      description: List assigns for cutting.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.TailorAssign'
+                  type: array
+              type: object
+      summary: Lists TailorAssign
+      tags:
+      - TailorAssign
+  /tailorassign/forcedelete/{id}:
+    delete:
+      description: Delete by TailorAssign ID
+      parameters:
+      - description: TailorAssign ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Permenant Delete an TailorAssign
+      tags:
+      - TailorAssign
+  /tailorassign/id/{id}:
+    get:
+      description: Gets One Tailor Assign by ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/production.TailorAssign'
+              type: object
+      summary: Gets One TailorAssign by ID
+      tags:
+      - TailorAssign
+  /tailorassign/product/{id}:
+    get:
+      description: Gets Cutting assign by product ID.
+      parameters:
+      - description: ID
+        in: path
+        name: product_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/production.TailorAssign'
+                  type: array
+              type: object
+      summary: Gets TailorAssign by Product ID
+      tags:
+      - TailorAssign
+  /tailorassign/tailor/{id}:
+    get:
+      description: Gets Cutting assign by Tailor ID.
+      parameters:
+      - description: Tailor ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/production.TailorAssign'
+      summary: Gets TailorAssign by Tailor ID
+      tags:
+      - TailorAssign
+  /tailorassign/tailor_assign/{id}:
+    get:
+      description: Gets One Tailor Assign by ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/production.TailorAssign'
+      summary: Gets One TailorAssign by ID
+      tags:
+      - TailorAssign
+  /transaction:
+    get:
+      description: List assigns for cutting.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Transaction'
+                  type: array
+              type: object
+      summary: Lists Transaction
+      tags:
+      - Transaction
+    post:
+      consumes:
+      - application/json
+      description: It creates assign for cutting.
+      parameters:
+      - description: Add Transaction
+        in: body
+        name: transaction
+        required: true
+        schema:
+          $ref: '#/definitions/models.TransactionBase'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Transaction'
+              type: object
+      summary: Create Transaction
+      tags:
+      - Transaction
+  /transaction/{id}:
+    delete:
+      description: Delete by Transaction ID
+      parameters:
+      - description: assign Cutting ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete Transaction
+      tags:
+      - Transaction
+    patch:
+      consumes:
+      - application/json
+      description: Updates Transaction
+      parameters:
+      - description: Update Transaction
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Transaction'
+              type: object
+      summary: Update Transaction
+      tags:
+      - Transaction
+  /transaction/date/{date}:
+    get:
+      description: Gets All Transactions by exact date
+      parameters:
+      - description: Date
+        in: path
+        name: date
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Transaction'
+                  type: array
+              type: object
+      summary: Gets Transactions by date
+      tags:
+      - Transaction
+  /transaction/deleted:
+    get:
+      description: List assigns for cutting.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Transaction'
+                  type: array
+              type: object
+      summary: Lists Transaction
+      tags:
+      - Transaction
+  /transaction/forcedelete/{id}:
+    delete:
+      description: Delete by Transaction ID
+      parameters:
+      - description: Transaction ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Permenant Delete an Transaction
+      tags:
+      - Transaction
+  /transaction/fromaccount/{account}:
+    get:
+      description: Gets All Transactions done from Account.
+      parameters:
+      - description: ID
+        in: path
+        name: account
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Transaction'
+                  type: array
+              type: object
+      summary: Gets Transactions by Account.
+      tags:
+      - Transaction
+  /transaction/id/{id}:
+    get:
+      description: Gets One Transactions by ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.Transaction'
+              type: object
+      summary: Gets One Transaction by ID
+      tags:
+      - Transaction
+  /transaction/medium/{paid_medium}:
+    get:
+      description: Gets All Transactions by Paid Medium
+      parameters:
+      - description: Type
+        in: path
+        name: paid_medium
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Transaction'
+                  type: array
+              type: object
+      summary: Gets Transactions by Medium
+      tags:
+      - Transaction
+  /transaction/month/{month}:
+    get:
+      description: Gets All Transactions by month
+      parameters:
+      - description: Month
+        in: path
+        name: month
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Transaction'
+                  type: array
+              type: object
+      summary: Gets Transactions by month
+      tags:
+      - Transaction
+  /transaction/toaccount/{account}:
+    get:
+      description: Gets All Transactions done to the Account.
+      parameters:
+      - description: ID
+        in: path
+        name: account
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Transaction'
+                  type: array
+              type: object
+      summary: Gets Transactions to Account.
+      tags:
+      - Transaction
+  /transaction/type/{paid_type}:
+    get:
+      description: Gets all Transactions by Type
+      parameters:
+      - description: Type
+        in: path
+        name: paid_type
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.Transaction'
+                  type: array
+              type: object
+      summary: Gets Transaction by Type
+      tags:
+      - Transaction
+  /upload:
+    post:
+      consumes:
+      - application/json
+      description: It uploads the file to S3
+      parameters:
+      - description: Upload file
+        in: formData
+        name: file
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ""
+      summary: Upload Single File
+      tags:
+      - Upload
+  /user:
+    post:
+      consumes:
+      - application/json
+      description: It creates an normal user
+      parameters:
+      - description: Add user
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/requests.CreateUser'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/requests.CreateUser'
+              type: object
+      summary: Create User
+      tags:
+      - User
+  /user_profile:
+    post:
+      consumes:
+      - application/json
+      description: It creates UserProfile
+      parameters:
+      - description: Add UserProfile
+        in: body
+        name: profile
+        required: true
+        schema:
+          $ref: '#/definitions/models.UserProfile'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.UserProfile'
+              type: object
+      summary: Create UserProfile
+      tags:
+      - UserProfile
+  /user_profile/{id}:
+    delete:
+      description: Delete by user_profile ID
+      parameters:
+      - description: Unique ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Soft Delete an user_profile
+      tags:
+      - UserProfile
+    patch:
+      consumes:
+      - application/json
+      description: Updates UserProfile of user
+      parameters:
+      - description: Update user_profile
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - type: object
+            - properties:
+                data:
+                  $ref: '#/definitions/models.UserProfile'
+              type: object
+      summary: Update UserProfile
+      tags:
+      - UserProfile
+  /user_profile/id/{id}:
+    get:
+      description: Gets One user profile by ID
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.UserProfile'
+      summary: Gets One User Profile by ID
+      tags:
+      - UserProfile
+securityDefinitions:
+  BearerAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"
